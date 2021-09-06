@@ -8,14 +8,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form id="login_form">
-        <input 
-         required
-         maxlength="15"
-         type="text" placeholder="name"/>
-        <button>LOGIN</button>
-    </form>
-    <h1 class="hidden" id="greeting">HELLO, </h1>
+    <div id="login_form_wrapper">
+        <form id="login_form" class="hidden">
+            <input 
+             required
+             maxlength="15"
+             type="text" placeholder="name"/>
+            <button>LOGIN</button>
+        </form>
+        <h1 class="hidden" id="greeting">HELLO, </h1>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
