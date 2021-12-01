@@ -1,8 +1,12 @@
-const clock = document.querySelector("h2#clock")
-const date = new Date;
+function setTime(){
+    const CLOCK = document.querySelector("h2#clock");
+    const date = new Date;
+    
+    let presentTime = String(date.getHours()).padStart(2,"0") + ' : ' 
+                    + String(date.getMinutes()).padStart(2,"0") + ' : ' 
+                    + String(date.getSeconds()).padStart(2,"0");
+    CLOCK.innerText = presentTime;
+    console.log(date.getHours);
+}
 
-let presentTime = "";
-console.log();
-
-clock.innerText = presentTime;
-
+setInterval(setTime,1000)
